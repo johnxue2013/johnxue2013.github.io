@@ -20,6 +20,7 @@
   <!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
+
 </head>
 <style>
   /*******************************************头部样式*******************************/
@@ -100,7 +101,7 @@
   /************************************产品展示左侧样式**********************************/
   div.product_type{
     width: 2000px;
-    height: 700px;
+    height: 750px;
     background-color: white;
     padding-left: 300px;
     padding-top: 50px;
@@ -154,11 +155,17 @@
     font-size: 20px;
     text-align: center;
   }
+  a.product_type_click_a_now{
+    color: #68B153;
+    /*width: 260px;*/
+    font-size: 20px;
+    text-align: center;
+  }
   /****************************************产品展示右侧样式*******************/
   div.product_type_right{
     float: right;
     width: 1120px;
-    /*height: 600px;*/
+    /*height: 1000px;*/
     padding-top: 12px;
     box-sizing: border-box;
     /*background-color: antiquewhite;*/
@@ -198,129 +205,10 @@
     width: 1120px;
   }
 
-  /**************************chooseME********************************/
-  div.choose{
-    width: 2000px;
-    /*height: 1000px;*/
-    /*background-color: greenyellow;*/
-    padding-left: 300px;
-    padding-top: 50px;
-    padding-right: 300px;
-    box-sizing: border-box;
-  }
-  div.choose_1{
-    /*width: 1400px;*/
-    /*padding-left: 560px;*/
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*background-color: red;*/
-    box-sizing: border-box;
-    /*align-items: center;*/
-    height: 100px;
-  }
-  table.choose_2_table{
-    padding-left: 50px;
-    width: 1400px;
-    /*background-color: #cccccc;*/
-  }
-  h1.choose_1_h1_1{
-      text-align: center;
-    color: #68B153;
-    }
-  h1.choose_1_h1_2{
+  p.product_p{
+    width: 250px;
     text-align: center;
-    color: #cccccc;
-  }
-  h1.choose_2_h1{
-    text-align: center;
-  }
-
-  div.choose_2{
-    margin-top: 20px;
-  }
-  td.choose_2_table_td{
-    /*margin-left: 30px;*/
-    /*margin-left:30px;*/
-  }
-  p.choose_p{
-    color: #cccccc;
-  }
-
-  img.choose_2_table_img{
-    align-items: center;
-    /*margin-left: 20px;*/
-    width: 350px;
-    height: 350px;
-  }
-  /********************************************** 行业资讯******************************/
-  div.hangye{
-    width: 2000px;
-    height: 550px;
-    /*background-color: greenyellow;*/
-    padding-left: 300px;
-    padding-top: 50px;
-    padding-right: 300px;
-    box-sizing: border-box;
-  }
-  div.hangye_title{
-    padding-top: 12px;
-    padding-left: 12px;
-    height: 50px;
-    background-color: #68B153;
-    box-sizing: border-box;
-  }
-  div.hangye_1{
-    height: 50px;
-    width: 650px;
-    float: left;
-  }
-  div.hangye_2{
-    height: 50px;
-    width: 650px;
-    float: right;
-  }
-  label.hangye_title_label{
-    font-size: 20px;
-    color: white;
-  }
-  img.hangye_img{
-    float: left;
-    width: 180px;
-    height: 100px;
-  }
-  p.hangye_p{
-    float: right;
-    color: #cccccc;
-    width: 450px;
-  }
-  div.hangye_jianjie{
-    margin-top: 8px;
-    height: 120px;
-    box-sizing: border-box;
-
-  }
-
-  label.hangye_ref_data_label{
-    color: #cccccc;
-    font-size: 15px;
-  }
-  label.hangye_ref_title_label{
-    color: #cccccc;
-    font-size: 15px;
-  }
-  div.hangye_ref_data{
-    float: right;
-  }
-  div.hangye_ref_title{
-    float:left;
-  }
-  div.hangye_ref{
-    padding-top: 12px;
-    padding-left: 12px;
-    height: 50px;
-    box-sizing: border-box;
-    background-color: white;
-
+    color: #555555;
   }
 
   /****************************************样式******************************/
@@ -353,6 +241,50 @@
     /*margin-top: 100px;*/
     /*background-color: #b3d4fc;*/
   }
+  /*************************************弹窗*****************************************/
+  div.tanchuang{
+    background-color: #b3d4fc;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 1300px;
+    height: 750px;
+    /*background: lightblue;*/
+    position: absolute;
+    /*padding: 40px 40px;*/
+    left: 15%;
+    top: 100%;
+    border-radius: 10px;
+    overflow: scroll;
+    z-index: 0;
+  }
+  div.tanchuang_title{
+    background-color: #68B153;
+    height: 40px;
+    width: 1300px;
+    box-sizing: border-box;
+  }
+  div.titel_text{
+    float: left;
+    margin-left: 30px;
+    margin-top: 8px;
+    /*margin-right: 6px;*/
+  }
+  #关闭{
+    background-color: #68B153;
+    font-size: 40px;
+    color: white;
+    margin-right: 6px;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+  }
+
 </style>
 <body>
 <div class="head">
@@ -366,10 +298,10 @@
 
 <div class="daohang1">
   <div class="daohang_click">
-    <a class="daohang_a" href="../src/indexNew.html">网站首页</a>
+    <a class="daohang_a" href="../indexNew.html">网站首页</a>
   </div>
   <div class="daohang_click">
-    <a class="daohang_a" href="../src/html/aboutmeNew.html">关于我们</a>
+    <a class="daohang_a" href="../html/aboutmeNew.html">关于我们</a>
   </div>
   <div class="daohang_click">
     <a class="daohang_a">产品中心</a>
@@ -388,9 +320,9 @@
 <div id = imgCarousel >
   <!--  图片轮播区域-->
   <div class="slider">
-    <img class="active" src="img/carousel/1.png">
-    <img src="img/carousel/2.jpg">
-    <img src="img/carousel/3.jpg">
+    <img class="active" src="../img/carousel/1.png">
+    <img src="../img/carousel/2.jpg">
+    <img src="../img/carousel/3.jpg">
   </div>
 </div>
 <div class="product_type">
@@ -403,7 +335,7 @@
     </div>
     <div class="product_type_1_left_1">
       <div class="product_type_click">
-        <a class="product_type_click_a">lndoor wpc produds</a>
+        <a class="product_type_click_a_now">lndoor wpc produds</a>
       </div>
     </div>
 
@@ -459,187 +391,30 @@
   <!--  ***********************物料展示区右侧****************************-->
   <div class="product_type_right">
     <div class="product_type_right_1">
-      <label class="product_type_right_1_label">产品展示</label>
+      <label class="product_type_right_1_label">lndoor wpc produds</label>
     </div>
     <div class="product_type_right_2">
       <table class="product_type_right_2_img_table">
         <tr>
-          <td><img class="product_type_right_2_img" src="img/product/product_1.jpg"></td>
-          <td><img class="product_type_right_2_img" src="img/product/product_2.jpg"></td>
-          <td><img class="product_type_right_2_img" src="img/product/product_1.jpg"></td>
+          <td>
+            <img onclick="open_1()" class="product_type_right_2_img" src="../img/product/lndoorWpcProduds/wpcwallpanel1/5.jpg">
+            <p class="product_p">wpc wall panel</p>
+          </td>
+          <td><img class="product_type_right_2_img" src="../img/product/lndoorWpcProduds/wpcceiling2/3.jpg">
+            <p class="product_p">wpc ceiling</p></td>
+          <td><img class="product_type_right_2_img" src="../img/product/lndoorWpcProduds/wpctimbetube3/5.jpg">
+            <p class="product_p">wpc timbe tube</p></td>
         </tr>
         <tr>
-          <td><img class="product_type_right_2_img" src="img/product/product_1.jpg"></td>
-          <td><img class="product_type_right_2_img" src="img/product/product_2.jpg"></td>
-          <td><img class="product_type_right_2_img" src="img/product/product_1.jpg"></td>
+          <td><img class="product_type_right_2_img" src="../img/product/lndoorWpcProduds/Intergratedwallpanel4/1.jpg">
+            <p class="product_p">Intergrated wall panel</p></td></td>
+          <td><img class="product_type_right_2_img" src="../img/product/lndoorWpcProduds/wpcfoamboard5/2.jpg">
+            <p class="product_p">wpc foam board</p></td></td>
+          <!--          <td><img class="product_type_right_2_img" src="../img/product/lndoorWpcProduds/wpctimbetube3/5.jpg"></td>-->
         </tr>
 
       </table>
     </div>
-  </div>
-</div>
-<!--  *******************************选择我们*******************************-->
-<div class="choose">
-  <div class="choose_1">
-    <h1 class="choose_1_h1_1">为什么选择我们</h1>
-    <h1 class="choose_1_h1_2">WHY CHOOSE US</h1>
-  </div>
-  <div class="choose_2">
-    <table class="choose_2_table">
-      <tr >
-        <td class="choose_2_table_td"><img class="choose_2_table_img" src="img/product/product5.jpg"></td>
-        <td class="choose_2_table_td"><img class="choose_2_table_img" src="img/product/product3.jpg"></td>
-        <td class="choose_2_table_td"><img class="choose_2_table_img" src="img/product/product4.jpg"></td>
-      </tr>
-      <tr>
-        <td><h1 class="choose_2_h1">厂区规范 实力雄厚</h1></td>
-        <td><h1 class="choose_2_h1">设备先进 品种齐全</h1></td>
-        <td><h1 class="choose_2_h1">网点遍布 贴心服务</h1></td>
-      </tr>
-      <tr>
-        <td><P class="choose_p">XXx生态木生产厂家位于中国闻名的环保产业基地——四川省什邡市,成立于2012年，拥有技术人员10多位，着力打造国内优异的生态木生产基地。管理制度规范严谨，深受国内外市场的欢迎</P></td>
-        <td><p class="choose_p">XXx生态木基于的生态木材料生产工艺和设备，实行严格的原料、生产技术把关，专注客户提供高品质的新型生态木材料，方木隔断系列、吸音板系列、塑木地板、塑木栏杆、塑木廊架、塑木花箱、数百种类别。</p></td>
-        <td><p class="choose_p">为更好的服务于广大群众，和府河市场均设有厂家直销店铺。在四川、贵州、重庆、陕西、甘肃、云南、西藏、湖南等各省均有经销代理商。有规范的售前，售中，售后服务体系，让您体会到家的贴心！</p></td>
-      </tr>
-    </table>
-  </div>
-</div>
-<!--  *******************************案例展示*******************************-->
-<div class="choose">
-  <div class="choose_1">
-    <h1 class="choose_1_h1_1">案例展示</h1>
-    <h1 class="choose_1_h1_2">CASE DEMONSTRATION</h1>
-  </div>
-  <div class="choose_2">
-    <table class="choose_2_table">
-      <tr >
-        <td class="choose_2_table_td"><img class="choose_2_table_img" src="img/product/anli_1.png"></td>
-        <td class="choose_2_table_td"><img class="choose_2_table_img" src="img/product/anli_2.jpg"></td>
-        <td class="choose_2_table_td"><img class="choose_2_table_img" src="img/product/anli_3.jpg"></td>
-<!--        <td class="choose_2_table_td"><img class="choose_2_table_img" src="img/product/anli_4.jpg"></td>-->
-      </tr>
-    </table>
-  </div>
-</div>
-<div class="hangye">
-  <div class="hangye_1">
-    <div class="hangye_title">
-      <label class="hangye_title_label">公司新闻</label>
-    </div>
-    <div class="hangye_jianjie">
-      <img class="hangye_img" src="img/product/anli_1.png">
-      <p class="hangye_p">水性地板蜡将实木地板打花应如何清除
-        自己动手为实木地板打蜡时很容易出现将地板打花的现象，打花爱家中的实木地板是由于没有掌握和控制好各种蜡的干燥时间或是... </p>
-    </div>
-    <div class="hangye_ref">
-      <div class="hangye_ref_title">
-        <label class="hangye_ref_title_label">生活中的小细节帮助地板更长寿</label>
-      </div>
-      <div class="hangye_ref_data">
-        <label class="hangye_ref_data_label">2017-08-08</label>
-      </div>
-    </div>
-    <div class="hangye_ref">
-      <div class="hangye_ref_title">
-        <label class="hangye_ref_title_label">木地板受到业主青睐 唤醒天然味道的家</label>
-      </div>
-      <div class="hangye_ref_data">
-        <label class="hangye_ref_data_label">2017-08-08</label>
-      </div>
-    </div>
-    <div class="hangye_ref">
-      <div class="hangye_ref_title">
-        <label class="hangye_ref_title_label">生活中的小细节帮助地板更长寿</label>
-      </div>
-      <div class="hangye_ref_data">
-        <label class="hangye_ref_data_label">2017-08-08</label>
-      </div>
-    </div>
-    <div class="hangye_ref">
-      <div class="hangye_ref_title">
-        <label class="hangye_ref_title_label">生活中的小细节帮助地板更长寿</label>
-      </div>
-      <div class="hangye_ref_data">
-        <label class="hangye_ref_data_label">2017-08-08</label>
-      </div>
-    </div>
-    <div class="hangye_ref">
-      <div class="hangye_ref_title">
-        <label class="hangye_ref_title_label">生活中的小细节帮助地板更长寿</label>
-      </div>
-      <div class="hangye_ref_data">
-        <label class="hangye_ref_data_label">2017-08-08</label>
-      </div>
-    </div>
-    <div class="hangye_ref">
-      <div class="hangye_ref_title">
-        <label class="hangye_ref_title_label">生活中的小细节帮助地板更长寿</label>
-      </div>
-      <div class="hangye_ref_data">
-        <label class="hangye_ref_data_label">2017-08-08</label>
-      </div>
-    </div>
-  </div>
-  <div class="hangye_2">
-    <div class="hangye_title">
-      <label class="hangye_title_label">行业资讯</label>
-    </div>
-    <div class="hangye_jianjie">
-      <div class="hangye_jianjie">
-        <img class="hangye_img" src="img/product/anli_2.jpg">
-        <p class="hangye_p">胶合板在挑选时一定要做到心中有数
-          家庭装修，很重要的一项就是选购板材。居室里家具、吊橱、护墙板、包实木门等装饰都需要使用胶合板。面对建材市场上五花八... </p>
-      </div>
-    </div>
-    <div class="hangye_ref">
-      <div class="hangye_ref_title">
-        <label class="hangye_ref_title_label">生活中的小细节帮助地板更长寿</label>
-      </div>
-      <div class="hangye_ref_data">
-        <label class="hangye_ref_data_label">2017-08-08</label>
-      </div>
-    </div>
-    <div class="hangye_ref">
-      <div class="hangye_ref_title">
-        <label class="hangye_ref_title_label">生活中的小细节帮助地板更长寿</label>
-      </div>
-      <div class="hangye_ref_data">
-        <label class="hangye_ref_data_label">2017-08-08</label>
-      </div>
-    </div>
-    <div class="hangye_ref">
-      <div class="hangye_ref_title">
-        <label class="hangye_ref_title_label">生活中的小细节帮助地板更长寿</label>
-      </div>
-      <div class="hangye_ref_data">
-        <label class="hangye_ref_data_label">2017-08-08</label>
-      </div>
-    </div>
-    <div class="hangye_ref">
-      <div class="hangye_ref_title">
-        <label class="hangye_ref_title_label">生活中的小细节帮助地板更长寿</label>
-      </div>
-      <div class="hangye_ref_data">
-        <label class="hangye_ref_data_label">2017-08-08</label>
-      </div>
-    </div>
-    <div class="hangye_ref">
-      <div class="hangye_ref_title">
-        <label class="hangye_ref_title_label">生活中的小细节帮助地板更长寿</label>
-      </div>
-      <div class="hangye_ref_data">
-        <label class="hangye_ref_data_label">2017-08-08</label>
-      </div>
-    </div>
-    <div class="hangye_ref">
-      <div class="hangye_ref_title">
-        <label class="hangye_ref_title_label">生活中的小细节帮助地板更长寿</label>
-      </div>
-      <div class="hangye_ref_data">
-        <label class="hangye_ref_data_label">2017-08-08</label>
-      </div>
-    </div>
-
   </div>
 </div>
 <div id="Pagefoot">
@@ -715,6 +490,28 @@
     </tr>
   </table>
 </div>
+
+<div class="tanchuang" id="tanchuang_1">
+  <div class="tanchuang_title" >
+    <div class="titel_text"><label style="color: white">wpc wall panel</label></div>
+    <button id="关闭" onclick="close_1()">&times;</button>
+  </div>
+  <img class="tanchuang_img" id="tanchuang_img_1" src="">
+  <table class="tanchuang_table">
+    <tr>
+      <td>
+        <img  class="tanchuang_img_small" src="../img/product/lndoorWpcProduds/wpcwallpanel1/5.jpg">
+      </td>
+      <td><img class="tanchuang_img_small" src="../img/product/lndoorWpcProduds/wpcceiling2/3.jpg">
+      <td><img class="tanchuang_img_small" src="../img/product/lndoorWpcProduds/wpctimbetube3/5.jpg">
+      <td>
+        <img  class="tanchuang_img_small" src="../img/product/lndoorWpcProduds/wpcwallpanel1/5.jpg">
+      </td>
+      <td><img class="tanchuang_img_small" src="../img/product/lndoorWpcProduds/wpcceiling2/3.jpg">
+      <td><img class="tanchuang_img_small" src="../img/product/lndoorWpcProduds/wpctimbetube3/5.jpg">
+    </tr>
+
+  </table>
 </div>
 <script>
   window.onload = function() {
@@ -728,6 +525,18 @@
       images[currentIndex].classList.add('active');
     }, 3000); // 切换时间
   };
+  function open_1() {
+    // window.open("../indexNew.html","newWindow","width = 100")
+    document.querySelector("#tanchuang_1").style.display = "flex";
+  }
+  function close_1() {
+    // window.open("../indexNew.html","newWindow","width = 100")
+    document.querySelector("#tanchuang_1").style.display = "none";
+  }
+  function chooseImg(src) {
+    // window.open("../indexNew.html","newWindow","width = 100")
+    document.querySelector("#tanchuang_img_1").src = src;
+  }
 </script>
 
 </body>

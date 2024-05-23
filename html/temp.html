@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>首页</title>
+  <!--  <link rel="indexNew" type="text/css" href="indexNew.css">-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <!--  <link rel="indexcss" href="style/css/index.css">-->
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+  <meta name="viewport" content=""width=device-width, initial-scale=1.0"">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+<style>
+  /*******************************************头部样式*******************************/
+  div.head{
+    /*网页头部*/
+    height: 160px;
+    width: 2000px;
+    /*background-color: blue;*/
+  }
+  h1.title_1{
+    margin-top: 10px;
+    color:#68B153 ;
+    size: 50px;
+  }
+  #title_1{
+    padding-top: 40px;
+    padding-left: 400px;
+    float: left;
+    box-sizing: border-box;
+  }
+  #title_2{
+    padding-top: 40px;
+    padding-right: 400px;
+    float: right;
+    box-sizing: border-box;
+  }
+  /*******************************************导航样式*******************************/
+  div.daohang1{
+    background-color:#68B153 ;
+    height: 50px;
+    width: 2000px;
+    padding-left: 350px;
+    box-sizing: border-box;
+  }
+  div.daohang_click{
+    background-color: #68B153;
+    /*height: 20px;*/
+    width: 120px;
+    padding-top: 14px;
+    padding-left: 50px;
+    float: left;
+    box-sizing: border-box;
+
+  }
+  a.daohang_a{
+    color: white;
+    /*width: 10px;*/
+    text-align: center;
+  }
+  /*******************************************轮播区样式*******************************/
+  .slider {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    margin: auto;
+  }
+  .slider img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  .slider img.active {
+    opacity: 1;
+  }
+
+  #imgCarousel{
+    width: 2000px;
+    height: 700px;
+
+    /*background-color: mediumseagreen;*/
+    /*margin-left: 32%;*/
+    margin-top: 0px;
+    margin-inside: 0px;
+    margin-outside: 0px;
+  }
+
+  /***********************************关于我们主体********************************************/
+
+  /****************************************底部样式******************************/
+  a.Pagefoot{
+    color: white;
+    /*size: 50px;*/
+    height: 30px;
+  }
+  #Pagefoot{
+    width: 2000px;
+    height: 280px;
+    padding-left: 250px;
+    box-sizing: border-box;
+    background-color: #68B153;
+  }
+  tr.pageFootTr{
+    width: 100px;
+    height: 10px;
+    /*background-color: darkgreen;*/
+  }
+  td.pageFootTd{
+    width: 100px;
+    height: 40px;
+    /*background-color: darkgreen;*/
+  }
+  table.PagefootTable{
+    height: 70px;
+    width: 1000px;
+    /*margin-left: 300px;*/
+    /*margin-top: 100px;*/
+    /*background-color: #b3d4fc;*/
+  }
+</style>
+<body>
+<div class="head">
+  <div id="title_1">
+    <h1 class="title_1">建材木板材料模板</h1>
+  </div>
+  <div id="title_2">
+    <h1 class="title_1">电话：123456789</h1>
+  </div>
+</div>
+
+<div class="daohang1">
+  <div class="daohang_click">
+    <a class="daohang_a">网站首页</a>
+  </div>
+  <div class="daohang_click">
+    <a class="daohang_a" href="../html/aboutME.html">关于我们</a>
+  </div>
+  <div class="daohang_click">
+    <a class="daohang_a">产品中心</a>
+  </div>
+  <div class="daohang_click">
+    <a class="daohang_a">工程案例</a>
+  </div>
+  <div class="daohang_click">
+    <a class="daohang_a">新闻中心</a>
+  </div>
+  <div class="daohang_click">
+    <a class="daohang_a">联系我们</a>
+  </div>
+</div>
+
+<div id = imgCarousel >
+  <!--  图片轮播区域-->
+  <div class="slider">
+    <img class="active" src="../img/carousel/1.png">
+    <img src="../img/carousel/2.jpg">
+    <img src="../img/carousel/3.jpg">
+  </div>
+</div>
+
+<div class="about1">
+
+
+</div>
+<div id="Pagefoot">
+  <table class="PagefootTable">
+    <tr class="pageFootTr">
+      <td class="pageFootTd"></td>
+      <td class="pageFootTd">
+        <a class="Pagefoot">Company</a>
+      </td>
+      <td class="pageFootTd">
+        <a class="Pagefoot">Product</a>
+      </td>
+      <td class="pageFootTd">
+        <a class="Pagefoot">Connect</a>
+      </td>
+    </tr>
+    <tr  class="pageFootTr">
+      <td class="pageFootTd"></td>
+      <td class="pageFootTd">
+        <a class="Pagefoot">Home</a>
+      </td>
+      <td class="pageFootTd">
+        <a class="Pagefoot">WPC wall panel</a>
+      </td>
+      <td class="pageFootTd"s>
+
+      </td>
+    </tr>
+    <tr  class="pageFootTr">
+      <td class="pageFootTd"></td>
+      <td class="pageFootTd">
+        <a class="Pagefoot">About</a>
+      </td>
+      <td class="pageFootTd">
+        <a class="Pagefoot">WPC Decking</a>
+      </td>
+      <td class="pageFootTd"s>
+
+      </td>
+    </tr>
+    <tr  class="pageFootTr">
+      <td class="pageFootTd"></td>
+      <td class="pageFootTd">
+        <a class="Pagefoot">Product</a>
+      </td>
+      <td class="pageFootTd">
+        <a class="Pagefoot">SPC flooring</a>
+      </td>
+      <td class="pageFootTd"s>
+      </td>
+    </tr>
+    <tr  class="pageFootTr">
+      <td class="pageFootTd"></td>
+      <td class="pageFootTd">
+        <a class="Pagefoot">Blog</a>
+      </td>
+      <td class="pageFootTd">
+        <a class="Pagefoot">PVC foam board</a>
+      </td>
+      <td class="pageFootTd"s>
+      </td>
+    </tr>
+    <tr  class="pageFootTr">
+      <td class="pageFootTd"></td>
+      <td class="pageFootTd">
+        <a class="Pagefoot">Contact</a>
+      </td>
+      <td class="pageFootTd">
+        <a class="Pagefoot">Accessories</a>
+      </td>
+      <td class="pageFootTd"s>
+      </td>
+    </tr>
+  </table>
+</div>
+</div>
+<script>
+  window.onload = function() {
+    var currentIndex = 0;
+    var images = document.querySelectorAll('.slider img');
+    var imageCount = images.length;
+
+    setInterval(function() {
+      images[currentIndex].classList.remove('active');
+      currentIndex = (currentIndex + 1) % imageCount;
+      images[currentIndex].classList.add('active');
+    }, 3000); // 切换时间
+  };
+</script>
+
+</body>
+</html>
