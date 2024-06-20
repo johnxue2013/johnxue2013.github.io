@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>首页</title>
+  <title>HOME</title>
   <!--  <link rel="indexNew" type="text/css" href="indexNew.css">-->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,8 +57,7 @@
   }
   div.daohang_click{
     background-color: #68B153;
-    /*height: 20px;*/
-    width: 120px;
+    width: 160px;
     padding-top: 14px;
     padding-left: 50px;
     float: left;
@@ -292,7 +291,11 @@
     width: 250px;
     height: 200px;
   }
-  #关闭{
+  img.tanchuang_img{
+    width:500px ;
+    height: 500px;
+  }
+  button.close_btn{
     background-color: #68B153;
     font-size: 40px;
     color: white;
@@ -313,28 +316,28 @@
     <h1 class="title_1">LINYI WANSHJIA BULIDINGDECORATION MATERIALS CO. LTD</h1>
   </div>
   <div id="title_2">
-    <h1 class="title_1">电话：+86 18553971136</h1>
+    <h1 class="title_1">TEL：+86 18553971136</h1>
   </div>
 </div>
 
 <div class="daohang1">
   <div class="daohang_click">
-    <a class="daohang_a" href="../index.html">网站首页</a>
+    <a class="daohang_a" href="../index.html">HOME</a>
   </div>
   <div class="daohang_click">
-    <a class="daohang_a" href="./aboutmeNew.html">关于我们</a>
+    <a class="daohang_a" href="./aboutmeNew.html">About Us</a>
   </div>
   <div class="daohang_click">
-    <a class="daohang_a" href="product1.html">产品中心</a>
+    <a class="daohang_a" href="product1.html">ProductCenter</a>
   </div>
   <div class="daohang_click">
-    <a class="daohang_a">工程案例</a>
+    <a class="daohang_a">ProjectCases</a>
   </div>
   <div class="daohang_click">
-    <a class="daohang_a">新闻中心</a>
+    <a class="daohang_a">News</a>
   </div>
   <div class="daohang_click">
-    <a class="daohang_a">联系我们</a>
+    <a class="daohang_a">Contact</a>
   </div>
 </div>
 
@@ -351,7 +354,7 @@
   <div class="product_type_left">
     <div class="product_type_1_left">
       <div class="product_type_notclick">
-        <a class="product_type_click_a_none">产品分类</a>
+        <a class="product_type_click_a_none">Product</a>
       </div>
     </div>
     <div class="product_type_1_left_1">
@@ -418,19 +421,19 @@
       <table class="product_type_right_2_img_table">
         <tr>
           <td>
-            <img onclick="open_1()" class="product_type_right_2_img" src="../img/product/lndoorWpcProduds/wpcwallpanel1/5.jpg">
-            <p class="product_p">wpc wall panel</p>
+            <img onclick="open_1()" class="product_type_right_2_img" src="../img/product/outdoorWpcProducts/wpcDecking/5.png">
+            <p class="product_p">wpc Decking</p>
           </td>
-          <td><img class="product_type_right_2_img" src="../img/product/lndoorWpcProduds/wpcceiling2/3.jpg">
-            <p class="product_p">wpc ceiling</p></td>
-          <td><img class="product_type_right_2_img" src="../img/product/lndoorWpcProduds/wpctimbetube3/5.jpg">
-            <p class="product_p">wpc timbe tube</p></td>
+          <td><img onclick="open_2()" class="product_type_right_2_img" src="../img/product/outdoorWpcProducts/wpcfence/3.jpg">
+            <p class="product_p">wpc fence</p></td>
+          <td><img onclick="open_3()" class="product_type_right_2_img" src="../img/product/outdoorWpcProducts/wpctimbertube/5.jpg">
+            <p class="product_p">wpc timbertube</p></td>
         </tr>
         <tr>
-          <td><img class="product_type_right_2_img" src="../img/product/lndoorWpcProduds/Intergratedwallpanel4/1.jpg">
-            <p class="product_p">Intergrated wall panel</p></td></td>
-          <td><img class="product_type_right_2_img" src="../img/product/lndoorWpcProduds/wpcfoamboard5/2.jpg">
-            <p class="product_p">wpc foam board</p></td></td>
+          <td><img onclick="open_4()" class="product_type_right_2_img" src="../img/product/outdoorWpcProducts/wpcwallpanel/1.jpg">
+            <p class="product_p">wpc wall panel</p></td></td>
+<!--          <td><img class="product_type_right_2_img" src="../img/product/outdoorWpcProducts/wpcfoamboard5/2.jpg">-->
+<!--            <p class="product_p">wpc foam board</p></td></td>-->
           <!--          <td><img class="product_type_right_2_img" src="../img/product/lndoorWpcProduds/wpctimbetube3/5.jpg"></td>-->
         </tr>
 
@@ -515,21 +518,87 @@
 <div class="tanchuang" id="tanchuang_1">
   <div class="tanchuang_title" >
     <div class="titel_text"><label style="color: white">wpc wall panel</label></div>
-    <button id="关闭" onclick="close_1()">&times;</button>
+    <button class="close_btn" id="关闭" onclick="close_1()">&times;</button>
   </div>
-  <img class="tanchuang_img" id="tanchuang_img_1" src="../img/product/outdoorWpcProducts/wpcwallpanel/1.jpg">
+  <img class="tanchuang_img" id="tanchuang_img_1" src="../img/product/outdoorWpcProducts/wpcDecking/1.png">
   <table class="tanchuang_table">
     <tr>
       <td>
-        <img  class="tanchuang_img_small" src="../img/product/outdoorWpcProducts/wpcwallpanel/1.jpg">
+        <img  class="tanchuang_img_small" src="../img/product/outdoorWpcProducts/wpcDecking/2.png">
       </td>
-      <td><img class="tanchuang_img_small" src="../img/product/outdoorWpcProducts/wpcwallpanel/2.jpg">
-      <td><img class="tanchuang_img_small" src="../img/product/outdoorWpcProducts/wpcwallpanel/3.jpg">
+      <td><img class="tanchuang_img_small" src="../img/product/outdoorWpcProducts/wpcDecking/3.jpg">
+      <td><img class="tanchuang_img_small" src="../img/product/outdoorWpcProducts/wpcDecking/4.jpg">
       <td>
-        <img  class="tanchuang_img_small" src="../img/product/outdoorWpcProducts/wpcwallpanel/4.jpg">
+        <img  class="tanchuang_img_small" src="../img/product/outdoorWpcProducts/wpcDecking/5.png">
       </td>
-      <td><img class="tanchuang_img_small" src="../img/product/outdoorWpcProducts/wpcwallpanel/5.jpg">
+      <td><img class="tanchuang_img_small" src="../img/product/outdoorWpcProducts/wpcDecking/6.png">
+      <td><img class="tanchuang_img_small" src="../img/product/outdoorWpcProducts/wpcDecking/1.png">
+    </tr>
+  </table>
+</div>
+<div class="tanchuang" id="tanchuang_2">
+  <div class="tanchuang_title" >
+    <div class="titel_text"><label style="color: white">wpc wall panel</label></div>
+    <button class="close_btn" id="关闭2" onclick="close_2()">&times;</button>
+  </div>
+  <img class="tanchuang_img" id="tanchuang_img_2" src="../img/product/outdoorWpcProducts/wpcfence/3.jpg">
+  <table class="tanchuang_table">
+    <tr>
+      <td>
+        <img  class="tanchuang_img_small" src="../img/product/outdoorWpcProducts/wpcfence/2.jpg">
+      </td>
+      <td><img class="tanchuang_img_small" src="../img/product/outdoorWpcProducts/wpcfence/1.jpg">
+      <td><img class="tanchuang_img_small" src="../img/product/outdoorWpcProducts/wpcfence/4.jpg">
+      <td>
+        <img  class="tanchuang_img_small" src="../img/product/outdoorWpcProducts/wpcfence/5.jpg">
+      </td>
+      <td><img class="tanchuang_img_small" src="../img/product/outdoorWpcProducts/wpcfence/6.jpg">
+      <td><img class="tanchuang_img_small" src="../img/product/outdoorWpcProducts/wpcfence/7.jpg">
+    </tr>
+  </table>
+</div>
+
+<div class="tanchuang" id="tanchuang_3">
+  <div class="tanchuang_title" >
+    <div class="titel_text"><label style="color: white">wpc wall panel</label></div>
+    <button class="close_btn"  onclick="close_3()">&times;</button>
+  </div>
+  <img class="tanchuang_img" id="tanchuang_img_3" src="../img/product/outdoorWpcProducts/wpctimbertube/3.jpg">
+  <table class="tanchuang_table">
+    <tr>
+      <td>
+        <img  class="tanchuang_img_small" src="../img/product/outdoorWpcProducts/wpctimbertube/2.jpg">
+      </td>
+      <td><img class="tanchuang_img_small" src="../img/product/outdoorWpcProducts/wpctimbertube/1.jpg">
+      <td><img class="tanchuang_img_small" src="../img/product/outdoorWpcProducts/wpctimbertube/4.jpg">
+      <td>
+        <img  class="tanchuang_img_small" src="../img/product/outdoorWpcProducts/wpctimbertube/5.jpg">
+      </td>
+      <td><img class="tanchuang_img_small" src="../img/product/outdoorWpcProducts/wpctimbertube/6.jpg">
+      <td><img class="tanchuang_img_small" src="../img/product/outdoorWpcProducts/wpctimbertube/7.jpg">
+    </tr>
+  </table>
+</div>
+
+
+<div class="tanchuang" id="tanchuang_4">
+  <div class="tanchuang_title" >
+    <div class="titel_text"><label style="color: white">wpc wall panel</label></div>
+    <button class="close_btn"  onclick="close_4()">&times;</button>
+  </div>
+  <img class="tanchuang_img" id="tanchuang_img_4" src="../img/product/outdoorWpcProducts/wpcwallpanel/3.jpg">
+  <table class="tanchuang_table">
+    <tr>
+      <td>
+        <img  class="tanchuang_img_small" src="../img/product/outdoorWpcProducts/wpcwallpanel/2.jpg">
+      </td>
+      <td><img class="tanchuang_img_small" src="../img/product/outdoorWpcProducts/wpcwallpanel/1.jpg">
+      <td><img class="tanchuang_img_small" src="../img/product/outdoorWpcProducts/wpcwallpanel/4.jpg">
+      <td>
+        <img  class="tanchuang_img_small" src="../img/product/outdoorWpcProducts/wpcwallpanel/5.jpg">
+      </td>
       <td><img class="tanchuang_img_small" src="../img/product/outdoorWpcProducts/wpcwallpanel/6.jpg">
+      <td><img class="tanchuang_img_small" src="../img/product/outdoorWpcProducts/wpcwallpanel/7.jpg">
     </tr>
   </table>
 </div>
@@ -556,6 +625,45 @@
   function chooseImg(src) {
     // window.open("../indexNew.html","newWindow","width = 100")
     document.querySelector("#tanchuang_img_1").src = src;
+  }
+
+  function open_2() {
+    // window.open("../indexNew.html","newWindow","width = 100")
+    document.querySelector("#tanchuang_2").style.display = "flex";
+  }
+  function close_2() {
+    // window.open("../indexNew.html","newWindow","width = 100")
+    document.querySelector("#tanchuang_2").style.display = "none";
+  }
+  function chooseImg2(src) {
+    // window.open("../indexNew.html","newWindow","width = 100")
+    document.querySelector("#tanchuang_img_2").src = src;
+  }
+
+  function open_3() {
+    // window.open("../indexNew.html","newWindow","width = 100")
+    document.querySelector("#tanchuang_3").style.display = "flex";
+  }
+  function close_3() {
+    // window.open("../indexNew.html","newWindow","width = 100")
+    document.querySelector("#tanchuang_3").style.display = "none";
+  }
+  function chooseImg2(src) {
+    // window.open("../indexNew.html","newWindow","width = 100")
+    document.querySelector("#tanchuang_img_3").src = src;
+  }
+
+  function open_4() {
+    // window.open("../indexNew.html","newWindow","width = 100")
+    document.querySelector("#tanchuang_4").style.display = "flex";
+  }
+  function close_4() {
+    // window.open("../indexNew.html","newWindow","width = 100")
+    document.querySelector("#tanchuang_4").style.display = "none";
+  }
+  function chooseImg4(src) {
+    // window.open("../indexNew.html","newWindow","width = 100")
+    document.querySelector("#tanchuang_img_4").src = src;
   }
 </script>
 
